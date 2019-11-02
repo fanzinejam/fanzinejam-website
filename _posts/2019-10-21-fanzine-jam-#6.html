@@ -1,0 +1,14 @@
+---
+number: 6
+layout: post
+preview: assets/fanzine/6/1.jpg
+date: 2019-10-21 16:29:06 +0200
+categories: fanzine
+---
+{% assign min = 1 %}
+{% assign max = 12 %}
+{% assign diff = max | minus: min %}
+{% for index in (1..84) %}
+	{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+	<div class="page rotate{{ randomNumber }}"><img src="{{ site.url }}/assets/fanzine/6/{{ index }}.jpg"></div>
+{% endfor %}
