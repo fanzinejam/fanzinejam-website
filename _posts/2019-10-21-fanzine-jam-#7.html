@@ -1,7 +1,10 @@
 ---
 number: 7
-layout: post
-preview: assets/fanzine/2/FanzineJam2 (2).png
+layout: default
+preview: assets/fanzine/7/fanzineweb1.jpg
 date: 2019-10-21 16:29:06 +0200
 categories: fanzine
 ---
+{% for index in (1..52) %}
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4 page"><img src="{{ site.url }}/assets/fanzine/7/fanzineweb{{ index }}.jpg"></div>
+{% endfor %}

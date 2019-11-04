@@ -1,14 +1,10 @@
 ---
 number: 4
-layout: post
+layout: default
 preview: assets/fanzine/4/FZ4-1.jpg
 date: 2019-10-21 16:29:06 +0200
 categories: fanzine
 ---
-{% assign min = 1 %}
-{% assign max = 12 %}
-{% assign diff = max | minus: min %}
 {% for index in (1..47) %}
-	{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
-	<div class="page rotate{{ randomNumber }}"><img src="{{ site.url }}/assets/fanzine/4/FZ4-{{ index }}.jpg"></div>
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4 page"><img src="{{ site.url }}/assets/fanzine/4/FZ4-{{ index }}.jpg"></div>
 {% endfor %}

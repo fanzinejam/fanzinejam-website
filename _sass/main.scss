@@ -24,6 +24,25 @@ body {
 	}
 }
 
+.container {
+	margin: 0;
+	max-width: 100%;
+}
+
+.about {
+	max-width: 800px;
+	margin: 20px auto;
+
+	p {
+		text-align: left;
+		margin: 20px auto;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
 nav {
 	width: 100%;
 	height: 50px;
@@ -47,16 +66,13 @@ nav {
 
 .preview {
 	display: inline-block;
-	width:500px;
-	height:500px;
-	margin: 24px;
-	background: no-repeat center url("../images/cover.png");
-	background-size: contain;
+	margin: 0;
+	padding: 0;
 	position: relative;
 
 	img {
-		width:500px;
-		height:500px;
+		width: 100%;
+		height: 100%;
 	}
 
 	.pastille {
@@ -79,28 +95,13 @@ nav {
 	}
 }
 
-
 .page {
 	display: inline-block;
+	margin: 0;
+	padding: 0;
 
 	img {
-		width: 400px;
-		margin: 20px;
-		-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.24);
-		-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.24);
-		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.24);
+		width: 100%;
+		height: 100%;
 	}
 }
-
-.rotate1 { -ms-transform: rotate(1deg); -webkit-transform: rotate(1deg); transform: rotate(1deg); }
-.rotate2 { -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg); transform: rotate(2deg); }
-.rotate3 { -ms-transform: rotate(3deg); -webkit-transform: rotate(3deg); transform: rotate(3deg); }
-.rotate4 { -ms-transform: rotate(4deg); -webkit-transform: rotate(4deg); transform: rotate(4deg); }
-.rotate5 { -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg); transform: rotate(5deg); }
-.rotate6 { -ms-transform: rotate(6deg); -webkit-transform: rotate(6deg); transform: rotate(6deg); }
-.rotate7 { -ms-transform: rotate(-1deg); -webkit-transform: rotate(-1deg); transform: rotate(-1deg); }
-.rotate8 { -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg); }
-.rotate9 { -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg); transform: rotate(-3deg); }
-.rotate10 { -ms-transform: rotate(-4deg); -webkit-transform: rotate(-4deg); transform: rotate(-4deg); }
-.rotate11 { -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
-.rotate12 { -ms-transform: rotate(-6deg); -webkit-transform: rotate(-6deg); transform: rotate(-6deg); }
